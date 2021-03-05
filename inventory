@@ -1,3 +1,12 @@
-192.168.30.100 ansible_user=admin
-192.168.30.99 ansible_user=admin
+#192.168.30.100 ansible_user=admin
+#192.168.30.99 ansible_user=admin
+
+[routers]
+router-1 ansible_host=192.168.30.100
+router-2 ansible_host=192.168.30.99
+
+[routers:vars]
+ansible_network_os=ios
+ansible_user=admin
+ansible_password=cisco123
 
